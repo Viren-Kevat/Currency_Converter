@@ -1,0 +1,134 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.head {
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+}
+body {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #102030;
+  color: #f0f8ff;
+}
+.template {
+  height: 21rem;
+  width: 35rem;
+  border-radius: 2rem;
+  border: 0.09rem solid #102030;
+  background-color: #fafafa;
+  color: #0d3154;
+}
+.amount {
+  height: 5rem;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1.5rem);
+}
+input {
+  height: 2rem;
+  border: none;
+  border-bottom: 0.1rem solid #102030;
+  outline: none;
+  text-align: center;
+  font-size: calc(1rem);
+}
+
+.main {
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: calc(1.5rem);
+}
+.from,
+.to {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.selectionlist {
+  display: flex;
+  flex-direction: column;
+}
+select {
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #102030;
+}
+.display {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: calc(1.2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin: 0.5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cbtn {
+  height: 3rem;
+  width: 9rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: #0d3154;
+  color: #f0f8ff;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 70%;
+  }
+  .template {
+    height: 40rem;
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .amount {
+    font-size: 2rem;
+  }
+  input {
+    height: 3rem;
+    font-size: 1.5rem;
+    border-bottom: 0.2rem solid #102030;
+  }
+  .main {
+    height: 7rem;
+    font-size: 2rem;
+    margin: 2rem 0 0 0;
+  }
+
+  select {
+    height: 3rem;
+    margin: 2rem 0 0 0;
+  }
+  .display {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: calc(2rem);
+  }
+  .cbtn {
+    height: 4rem;
+    width: 10rem;
+    border-radius: 1rem;
+  }
+}
